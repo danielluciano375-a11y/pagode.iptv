@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entrar — Pagode IPTV</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 50% 30%, #7900a844, transparent 35%),
+        #08080c;
+      color: white;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 420px;
+      background: #15151d;
+      border: 1px solid #ffffff12;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 20px 60px #00000066;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .logo span {
+      color: #b000ff;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ccc;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      border: 1px solid #ffffff22;
+      background: #0d0d12;
+      color: white;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #9c00ff;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      border-radius: 9px;
+      background: linear-gradient(90deg, #ff174f, #9c00ff);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .voltar {
+      display: block;
+      text-align: center;
+      margin-top: 22px;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .voltar:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <div class="logo">
+      PAGODE <span>IPTV</span>
+    </div>
+
+    <p class="subtitle">
+      Entre na sua conta
+    </p>
+
+    <form>
+      <label for="usuario">Usuário</label>
+      <input
+        type="text"
+        id="usuario"
+        placeholder="Digite seu usuário"
+      >
+
+      <label for="senha">Senha</label>
+      <input
+        type="password"
+        id="senha"
+        placeholder="Digite sua senha"
+      >
+
+      <button type="submit">
+        Entrar
+      </button>
+    </form>
+
+    <a href="index.html" class="voltar">
+      ← Voltar para o início
+    </a>
+
+  </div>
+
+</body>
+</html>
