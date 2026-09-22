@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canais — Pagode IPTV</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #08080c;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 7%;
+      background: #101017;
+      border-bottom: 1px solid #ffffff12;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .logo span {
+      color: #b000ff;
+    }
+
+    .voltar {
+      color: white;
+      text-decoration: none;
+      border: 1px solid #ffffff33;
+      padding: 9px 18px;
+      border-radius: 8px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 25px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    .categorias {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .categoria {
+      background: #1a1a23;
+      color: white;
+      border: 1px solid #ffffff15;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .categoria:hover,
+    .categoria.ativa {
+      background: linear-gradient(90deg, #ff174f, #9c00ff);
+    }
+
+    .canais {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .canal {
+      background: #15151d;
+      border: 1px solid #ffffff12;
+      border-radius: 15px;
+      padding: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .canal:hover {
+      transform: translateY(-4px);
+      border-color: #9c00ff;
+      box-shadow: 0 10px 30px #9c00ff22;
+    }
+
+    .canal-logo {
+      width: 65px;
+      height: 65px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ff174f, #9c00ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    .canal h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .canal p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .canais {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .canais {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      PAGODE <span>IPTV</span>
+    </div>
+
+    <a href="cliente.html" class="voltar">
+      ← Área do cliente
+    </a>
+
+  </header>
+
+  <main>
+
+    <h1>📺 Canais</h1>
+
+    <p class="descricao">
+      Escolha um canal para assistir.
+    </p>
+
+    <div class="categorias">
+
+      <button class="categoria ativa">
+        Todos
+      </button>
+
+      <button class="categoria">
+        Entretenimento
+      </button>
+
+      <button class="categoria">
+        Esportes
+      </button>
+
+      <button class="categoria">
+        Notícias
+      </button>
+
+    </div>
+
+    <div class="canais">
+
+      <div class="canal">
+        <div class="canal-logo">📺</div>
+
+        <h2>Canal 1</h2>
+
+        <p>Entretenimento</p>
+      </div>
+
+      <div class="canal">
+        <div class="canal-logo">🎬</div>
+
+        <h2>Canal 2</h2>
+
+        <p>Filmes e séries</p>
+      </div>
+
+      <div class="canal">
+        <div class="canal-logo">⚽</div>
+
+        <h2>Canal 3</h2>
+
+        <p>Esportes</p>
+      </div>
+
+      <div class="canal">
+        <div class="canal-logo">📰</div>
+
+        <h2>Canal 4</h2>
+
+        <p>Notícias</p>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
